@@ -1,11 +1,64 @@
-snippet gfn
+# ES 6 Snippets
+snippet 6gfn
 function* ${1:name}(${2}) {
   yield ${3};
 }
 endsnippet
 
-snippet af
+snippet 6af
 (${1}) => {
   ${2}
 }
+endsnippet
+
+snippet 6forof
+for (let ${1} of ${2}){
+  ${3}
+}
+endsnippet
+
+# JS
+snippet deb
+debugger;
+endsnippet
+
+snippet ared
+${1}.reduce((acc, curr) => {
+  ${3}
+  return acc;
+}, ${2})
+endsnippet
+
+snippet amap
+${1}.map((item${2:, index}) => {
+  ${3}
+  return item;
+});
+endsnippet
+
+snippet afil
+${1}.filter((item${2:, index}) => {
+  ${3}
+  return item;
+});
+endsnippet
+
+snippet asom
+${1}.some((item${2:, index}) => {
+  ${3}
+  return item;
+});
+endsnippet
+
+
+snippet aev
+${1}.every((item${2:, index}) => {
+  ${3}
+  return item;
+});
+endsnippet
+snippet aoo
+${1:const} ${2:name} = [
+  {$3}
+];
 endsnippet
